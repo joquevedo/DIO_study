@@ -20,7 +20,9 @@ while True:
     if option == 1:
         print("Depósito")
         dpt = float(input("Digite o valor para depósito (apenas números): "))
-        if dpt > 0:
+        if dpt<0:
+            print("Operação inválida")
+        elif dpt > 0:
             saldo += dpt
             extrato+= f"Depósito realizado: R${dpt:.2f}\n"   
         
@@ -55,4 +57,5 @@ while True:
     else:
         print("Operação ínvalida, selecione novamente a opção desejada")
         
+
 
