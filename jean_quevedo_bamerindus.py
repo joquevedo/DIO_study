@@ -44,6 +44,7 @@ while True:
         
     elif option== 3:
             print("Extrato")
+            print("Não foram realizadas movimentações." if not extrato else extrato) 
             extrato += f"Saldo atual: R${saldo:.2f}\n"
             extrato += f"Total de saques no dia: {total_saques}. Limite diário: 3\n"
             print(extrato)
@@ -54,3 +55,4 @@ while True:
     else:
         print("Operação ínvalida, selecione novamente a opção desejada")
         
+
